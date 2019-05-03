@@ -42,7 +42,7 @@ public class CodeFinder extends Activity {
             public void onClick(View v) {
                 String ICD10Search = searchBar.getText().toString();
                 diagnosis.clear();
-                String url ="https://clinicaltables.nlm.nih.gov/api/icd10cm/v3/search?sf=code,name&terms=" + ICD10Search ;
+                String url ="https://clinicaltables.nlm.nih.gov/api/icd10cm/v3/search?sf=code,name&maxList=&terms=" + ICD10Search ;
                 if (ICD10Search.isEmpty()){
                     AlertDialog alertDialog = new AlertDialog.Builder(CodeFinder.this).create();
                     alertDialog.setTitle("Warning");
